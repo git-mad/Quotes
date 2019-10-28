@@ -9,7 +9,7 @@ public class RetrofitClient {
     public static Retrofit getRetrofitInstance() {
         if (retrofit == null) {
             retrofit = new retrofit2.Retrofit.Builder()
-                    .baseUrl("http://127.0.0.1:8080/")
+                    .baseUrl("https://raw.githubusercontent.com/git-mad/Quotes/data/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
