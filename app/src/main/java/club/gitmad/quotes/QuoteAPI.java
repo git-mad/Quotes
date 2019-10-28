@@ -6,6 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface QuoteAPI {
-    @GET("quotes.json")
-    Call<List<Quote>> getQuotes();
+    // TODO(1): Make the retrofit interface
+    // It should GET quotes.json
+    // See https://square.github.io/retrofit/
 }

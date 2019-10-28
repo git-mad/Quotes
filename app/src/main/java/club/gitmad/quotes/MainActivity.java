@@ -23,11 +23,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         QuoteAPI service = RetrofitClient.getRetrofitInstance().create(QuoteAPI.class);
-        Call<List<Quote>> call = service.getQuotes();
+        // TODO(2): Make the call object and make it get the quotes.
+
         call.enqueue(new Callback<List<Quote>>() {
             @Override
             public void onResponse(Call<List<Quote>> call, Response<List<Quote>> response) {
-                displayQuotes(response.body());
+                // TODO(3): Display the quotes to the recycler view
+                // hint: look at the private methods of this class, don't overthink this.
             }
 
             @Override
