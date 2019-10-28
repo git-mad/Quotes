@@ -33,7 +33,7 @@ public class QuoteAdapter extends RecyclerView.Adapter<QuoteAdapter.QuoteViewHol
                                                          int viewType) {
         // create a new view
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.content_item, parent, false);
+                .inflate(R.layout.quote_item, parent, false);
 
         QuoteViewHolder vh = new QuoteViewHolder(view);
         return vh;
